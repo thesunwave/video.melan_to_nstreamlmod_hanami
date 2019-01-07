@@ -1,0 +1,2 @@
+module VideoMelan
+end
