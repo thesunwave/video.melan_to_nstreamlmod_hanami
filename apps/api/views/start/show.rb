@@ -1,7 +1,7 @@
 module Api
   module Views
     module Start
-      class Index
+      class Show
         include Api::View
 
         def render
