@@ -1,6 +1,6 @@
 module Api
   module Controllers
-    module Main
+    module Films
       class Show
         include Api::Action
 
@@ -9,7 +9,7 @@ module Api
         expose :list
 
         def call(params)
-          @list = Api::Presenters::Main.new(channels: VideoMelan::Services::Fetcher.new(kind: :main).call)
+          @list = Api::Presenters::Main.new(VideoMelan::Services::Fetcher.new(kind: :get_film, movie_id: params[:id]).call)
         end
       end
     end

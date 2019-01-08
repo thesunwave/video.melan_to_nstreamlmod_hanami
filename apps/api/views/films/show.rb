@@ -1,6 +1,6 @@
 module Api
   module Views
-    module Main
+    module Films
       class Show
         include Api::View
 

@@ -4,6 +4,10 @@ gem 'rake'
 gem 'hanami',       '~> 1.3'
 gem 'hanami-model', '~> 1.3'
 gem 'surrealist',   '~> 1.3'
+gem 'watir',        '~> 6.16'
+gem 'moneta'
+
+gem 'puma',         '~> 3.11.0'
 
 gem 'sqlite3'
 

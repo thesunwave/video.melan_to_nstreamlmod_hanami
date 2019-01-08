@@ -8,25 +8,24 @@ module Api
         expose :start_list
 
         def call(params)
-          # binding.pry
           @start_list = {
             playlist_name: 'Video.Melan',
             channels: [
                 {
                     title: 'Главная',
-                    playlist_url: routes.path(:main),
+                    playlist_url: routes.url(:main),
                     description: 'Фильмы с главной'
                 },
                 {
                     title: 'Новые',
-                    playlist_url: routes.path(:new),
+                    playlist_url: routes.url(:new),
                     description: 'Недавно добавленные фильмы'
                 },
                 {
                     title: "Поиск",
                     search_on: "Поиск по каталогу",
                     logo: '',
-                    playlist_url: routes.path(:search),
+                    playlist_url: routes.url(:search),
                     description: "Поиск по всему каталогу Video.Melan"
                 }
               ]
