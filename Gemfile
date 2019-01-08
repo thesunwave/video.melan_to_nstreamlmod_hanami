@@ -16,6 +16,11 @@ group :development do
   # See: http://hanamirb.org/guides/projects/code-reloading
   gem 'shotgun', platforms: :ruby
   gem 'hanami-webconsole'
+
+  gem 'capistrano', '~> 3.11', require: false
+  gem 'capistrano-rvm'
+  gem 'capistrano-bundler', '~> 1.3'
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
 end
 
 group :test, :development do
