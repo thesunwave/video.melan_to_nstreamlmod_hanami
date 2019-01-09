@@ -8,6 +8,7 @@ gem 'watir',        '~> 6.16'
 gem 'moneta'
 
 gem 'puma',         '~> 3.12.0'
+gem 'dotenv',       '~> 2.4'
 
 gem 'sqlite3'
 
@@ -24,7 +25,6 @@ group :development do
 end
 
 group :test, :development do
-  gem 'dotenv', '~> 2.4'
   gem 'pry-byebug'
   gem 'pry'
 end
