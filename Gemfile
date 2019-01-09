@@ -4,6 +4,11 @@ gem 'rake'
 gem 'hanami',       '~> 1.3'
 gem 'hanami-model', '~> 1.3'
 gem 'surrealist',   '~> 1.3'
+gem 'watir',        '~> 6.16'
+gem 'moneta'
+
+gem 'puma',         '~> 3.12.0'
+gem 'dotenv',       '~> 2.4'
 
 gem 'sqlite3'
 
@@ -12,10 +17,14 @@ group :development do
   # See: http://hanamirb.org/guides/projects/code-reloading
   gem 'shotgun', platforms: :ruby
   gem 'hanami-webconsole'
+
+  gem 'capistrano', '~> 3.11', require: false
+  gem 'capistrano-rvm'
+  gem 'capistrano-bundler', '~> 1.3'
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
 end
 
 group :test, :development do
-  gem 'dotenv', '~> 2.4'
   gem 'pry-byebug'
   gem 'pry'
 end

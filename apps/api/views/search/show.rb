@@ -1,7 +1,7 @@
 module Api
   module Views
-    module Main
-      class Index
+    module Search
+      class Show
         include Api::View
       end
     end

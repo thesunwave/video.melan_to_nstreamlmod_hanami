@@ -3,7 +3,11 @@
 #
 # Example:
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
-root to: 'start#index'
+root to: 'start#show'
 
-get '/main', to: 'main#index'
-get '/start', to: 'start#index'
+resource :main,    only: [:show]
+resource :start,   only: [:show]
+resource :new,     only: [:show]
+resource :search,  only: [:show]
+resources :films,  only: [:show]
+get '/search/:id', to: 'search#show'

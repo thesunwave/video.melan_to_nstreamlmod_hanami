@@ -1,7 +1,7 @@
 module Api
   module Controllers
-    module Main
-      class Index
+    module Search
+      class Show
         include Api::Action
 
         def call(params)

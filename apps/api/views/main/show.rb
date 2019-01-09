@@ -1,11 +1,11 @@
 module Api
   module Views
-    module Start
-      class Index
+    module Main
+      class Show
         include Api::View
 
         def render
-          _raw start_list.to_json
+          _raw list.as_json
         end
       end
     end
