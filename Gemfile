@@ -7,7 +7,7 @@ gem 'surrealist',   '~> 1.3'
 gem 'watir',        '~> 6.16'
 gem 'moneta'
 
-gem 'puma',         '~> 3.11.0'
+gem 'puma',         '~> 3.12.0'
 
 gem 'sqlite3'
 
