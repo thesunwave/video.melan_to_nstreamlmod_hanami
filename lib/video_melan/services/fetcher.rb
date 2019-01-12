@@ -14,8 +14,8 @@ module VideoMelan
           Parsers::MainPage.new.call
         when :get_film
           Parsers::FilmPage.new(movie_id: movie_id).call
-        # when :new
-          # FromRssService.new(hostname: @hostname).call
+        when :from_rss
+          Parsers::FromRssPage.new.call
         else
           {}
         end

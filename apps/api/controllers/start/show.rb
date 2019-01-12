@@ -18,7 +18,7 @@ module Api
                 },
                 {
                     title: 'Новые',
-                    playlist_url: routes.url(:new),
+                    playlist_url: routes.url(:from_rss_films),
                     description: 'Недавно добавленные фильмы'
                 },
                 {

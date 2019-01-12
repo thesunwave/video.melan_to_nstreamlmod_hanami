@@ -9,6 +9,8 @@ gem 'moneta'
 
 gem 'puma',         '~> 3.12.0'
 gem 'dotenv',       '~> 2.4'
+gem 'rest-client'
+gem 'nokogiri'
 
 gem 'sqlite3'
 

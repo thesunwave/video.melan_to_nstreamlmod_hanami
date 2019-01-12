@@ -9,5 +9,9 @@ resource :main,    only: [:show]
 resource :start,   only: [:show]
 resource :new,     only: [:show]
 resource :search,  only: [:show]
-resources :films,  only: [:show]
-get '/search/:id', to: 'search#show'
+resources :films,  only: [:show] do
+  collection do
+    get 'from_rss'
+  end
+end
+get '/search/:id', to: 'search#show', as: :search
