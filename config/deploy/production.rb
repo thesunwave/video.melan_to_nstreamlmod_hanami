@@ -1,6 +1,6 @@
 set :deploy_to, "/home/developer/www/video_melan_new"
 
-server "192.168.0.104", user: "developer", roles: %w{app web}
+server "192.168.31.119", user: "developer", roles: %w{app web}
 
 set :stage,           :production
 set :rvm_ruby_version, '2.5.1'
