@@ -4,14 +4,14 @@ gem 'rake'
 gem 'hanami',       '~> 1.3'
 gem 'hanami-model', '~> 1.3'
 gem 'surrealist',   '~> 1.3'
-gem 'watir',        '~> 6.16'
+gem 'watir', '~> 6.16', '>= 6.16.5'
 gem 'cachy'
 gem 'redis'
 
 gem 'puma',         '~> 3.12.2'
 gem 'dotenv',       '~> 2.4'
 gem 'rest-client'
-gem "nokogiri",     '>= 1.10.4'
+gem "nokogiri", ">= 1.10.5"
 
 gem 'sqlite3'
 
@@ -36,5 +36,5 @@ end
 
 group :test do
   gem 'rspec'
-  gem 'capybara'
+  gem 'capybara', '>= 3.12.0'
 end
