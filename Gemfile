@@ -11,7 +11,7 @@ gem 'redis'
 gem 'puma',         '~> 3.12.2'
 gem 'dotenv',       '~> 2.4'
 gem 'rest-client'
-gem "nokogiri", ">= 1.10.5"
+gem "nokogiri", ">= 1.10.8"
 
 gem 'sqlite3'
 
@@ -36,5 +36,5 @@ end
 
 group :test do
   gem 'rspec'
-  gem 'capybara', '>= 3.12.0'
+  gem 'capybara', '>= 3.30.0'
 end
