@@ -8,7 +8,7 @@ gem 'watir', '~> 6.16', '>= 6.16.5'
 gem 'cachy'
 gem 'redis'
 
-gem 'puma', '~> 4.3.8'
+gem 'puma', '~> 4.3.12'
 gem 'dotenv',       '~> 2.4'
 gem 'rest-client'
 gem "nokogiri", ">= 1.10.8"
