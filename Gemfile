@@ -11,7 +11,7 @@ gem 'redis'
 gem 'puma', '~> 4.3.8'
 gem 'dotenv',       '~> 2.4'
 gem 'rest-client'
-gem "nokogiri", ">= 1.10.8"
+gem "nokogiri", ">= 1.13.9"
 
 gem 'sqlite3'
 
