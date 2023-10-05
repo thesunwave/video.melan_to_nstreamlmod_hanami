@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'hanami', '~> 1.3', '>= 1.3.0'
+gem 'hanami', '~> 2.0', '>= 2.0.0'
 gem 'hanami-model', '~> 1.3'
 gem 'surrealist',   '~> 1.3'
 gem 'watir', '~> 6.16', '>= 6.16.5'
