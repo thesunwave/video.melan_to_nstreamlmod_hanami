@@ -15,7 +15,7 @@ gem "nokogiri", ">= 1.18.3"
 
 gem 'sqlite3'
 
-gem "sentry-raven"
+gem "sentry-raven", ">= 3.0.0"
 
 group :development do
   # Code reloading
